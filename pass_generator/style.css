@@ -27,7 +27,7 @@ h1 {
 	width: 550px;
 	max-width: 550px;
 	max-height: 550px;
-	min-width: 390px;
+	min-width: 385px;
 	min-height: 510px;
 }
 
@@ -56,6 +56,8 @@ h1 {
 
 #copy {
 	display: flex;
+	scale: .9;
+	transform: translateX(4px);
 	color: lightcoral;
 	-webkit-tap-highlight-color: transparent;
 	cursor: pointer;
