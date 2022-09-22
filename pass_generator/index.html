@@ -1,0 +1,48 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width">
+      <title>Password Generator</title>      
+      <script src="generator.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25"/>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="body" onload="load();">   
+      <div class="wrapper">
+        <div class="container"> 
+          <h1>Password Generator</h1>  
+          <div class="main_output">
+            <div class="output" id="output" contenteditable="true" data-placeholder="P4$$w0rD!"></div>
+            <div class="material-symbols-outlined" id="copy" onclick="copied()">content_copy</div>
+          </div>
+          <div class="main" id="main">
+            <div id="main_len">
+              <div id="char_len">Character Length</div>
+              <div id="out_len"></div>
+            </div>            
+            <input type="range" id="range_len" oninput="len()" min="8" max="20" value="8">
+            <ul id="include">
+              <input type="checkbox" id="chbox1" class="checkbox"/>
+              <label for="uppercase">Include uppercase letters</label><br>
+              <input type="checkbox" id="chbox2" class="checkbox"/>
+              <label for="lowercase">Include lowercase letters</label><br>
+              <input type="checkbox" id="chbox3" class="checkbox"/>
+              <label for="numbers">Include numbers</label><br>
+              <input type="checkbox" id="chbox4" class="checkbox"/>
+              <label for="symbols">Include symbols</label><br> 
+            </ul>
+            <div class="main_strength" id="strength">
+              <div class="strength">STRENGTH</div>
+              <div class="main_level">
+                <div class="level" id="level"></div>
+                <div class="rect1" id="rect1"></div>
+                <div class="rect2" id="rect2"></div>
+                <div class="rect3" id="rect3"></div>
+                <div class="rect4" id="rect4"></div> 
+              </div>   
+            </div>
+            <button id="button" onclick="generate()">GENERATE</button>
+          </div>
+        </div>
+      </div>
+    </body>  
+</html>
