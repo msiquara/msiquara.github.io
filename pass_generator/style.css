@@ -143,6 +143,11 @@ h1 {
 	background: #222222;
 }
 
+#range_len::-webkit-range-thumb:active {
+	border: 0.15em solid lightcoral;
+	background: #222222;
+}
+
 #range_len::-moz-range-progress {
 	height: 8px;
 	background-color: lightcoral;
