@@ -57,6 +57,7 @@ h1 {
 #copy {
 	display: flex;
 	color: lightcoral;
+	-webkit-tap-highlight-color: transparent;
 	cursor: pointer;
 }
 
@@ -156,6 +157,7 @@ h1 {
 .checkbox {
 	-webkit-appearance: none;
 	appearance: none;
+	-webkit-tap-highlight-color: transparent;
 	background-color: #333333;
 	width: 1.15em;
 	height: 1.15em;
@@ -269,6 +271,7 @@ input[type="checkbox"]:checked::before {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	-webkit-tap-highlight-color: transparent;
 	font-weight: bold;
 	font-family: Tahoma;
 	color: #222222;
