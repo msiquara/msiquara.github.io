@@ -27,7 +27,7 @@ h1 {
 	width: 550px;
 	max-width: 550px;
 	max-height: 550px;
-	min-width: 385px;
+	min-width: 355px;
 	min-height: 510px;
 }
 
@@ -58,8 +58,8 @@ h1 {
 	display: flex;
 	scale: .9;
 	transform: translateX(4px);
-	color: lightcoral;
 	-webkit-tap-highlight-color: transparent;
+	color: lightcoral;
 	cursor: pointer;
 }
 
@@ -301,4 +301,31 @@ input[type="checkbox"]:checked::before {
 #button:hover {
 	background-color: #333333;
 	color: lightcoral;
+}
+
+@media screen and (max-width: 400px){
+	.output {
+		font-size: 1.05em;
+		font-weight: bold;
+		color:  white;
+		transform: translateY(1px);
+	}
+
+	#cpText {
+		position: absolute;
+		font-weight: bold;
+		font-family: Tahoma;
+		font-size: 0.45em;
+		color: lightcoral;
+		margin: 7px 22px;
+		-webkit-transition: .5s;
+		opacity: 0;
+		margin-left: -31px;
+	}
+
+	#cpText.clicked {
+		margin-left: -43px;
+		opacity: .9;
+	}
+
 }
