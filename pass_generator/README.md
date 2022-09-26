@@ -1,2 +1,2 @@
-# https://msiquara.github.io
+# https://msiquara.github.io/pass_generator
  
