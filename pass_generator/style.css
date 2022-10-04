@@ -1,8 +1,7 @@
 body {
 	background-color: black;
 	color: lightgray;
-	font-family: Tahoma, -apple-system;
-	
+	font-family: Tahoma;
 }
 
 h1 {
@@ -91,9 +90,8 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 14px;
 }
 
 #out_len {
@@ -108,7 +106,6 @@ h1 {
 	height: 8px;
 	background: #222222;
 	outline: none;
-	margin-bottom: 10px;
 }
 
 #range_len::-moz-range-thumb {
@@ -193,7 +190,8 @@ input[type="checkbox"]:checked::before {
 
 #include {
 	line-height: 1.6;
-	padding: 0px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 	transform: translateX(-4px);
 }
 
