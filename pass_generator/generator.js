@@ -14,16 +14,18 @@ function load(){
 	document.getElementById("rect1").style.borderColor = "red";
 	document.getElementById("range_len").value = 8;
 	document.getElementById("out_len").innerHTML = document.getElementById("range_len").value;
-	const buttons = document.querySelectorAll('ul input');
+	const buttons = document.querySelectorAll('div input');
 
 	for (const button of buttons) {		
-	 	button.addEventListener('click', buttonEvent);
+	 	button.addEventListener('click', checkEvent);
 	}
+
+	document.getElementById("range_len").addEventListener('click', checkEvent);
 }
 
-function buttonEvent(){
+function checkEvent(){
 	let cont = 0;
-	const buttons = document.querySelectorAll('ul input');
+	const buttons = document.querySelectorAll('div input');
 
 	for (const button of buttons) {
 	 	if (button.checked){
@@ -88,8 +90,6 @@ function buttonEvent(){
 			document.getElementById("rect3").style.borderColor = "lime";
 			document.getElementById("rect4").style.backgroundColor = "lime";
 			document.getElementById("rect4").style.borderColor = "lime";
-			break;
-		default:
 	}
 }
 
@@ -136,7 +136,8 @@ function randomPassword(alphabet){
 function len(){
 	let char_len = document.getElementById("range_len").value;
 	document.getElementById("out_len").innerHTML = char_len;
-	return parseInt(char_len);
+
+	return char_len;
 }
 
 function copied(){
