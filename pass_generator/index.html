@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
     <head>
-      <meta name="viewport" content="width=device-width">
+      <meta charset="UTF-8">
       <title>Password Generator</title>      
       <script src="generator.js"></script>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25"/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25">
       <link rel="stylesheet" href="style.css">
     </head>
     <body class="body" onload="load();">   
@@ -20,16 +21,16 @@
               <div id="out_len"></div>
             </div>            
             <input type="range" id="range_len" oninput="len()" min="8" max="20" value="8">
-            <ul id="include">
-              <input type="checkbox" id="chbox1" class="checkbox"/>
-              <label for="uppercase">Include uppercase letters</label><br>
-              <input type="checkbox" id="chbox2" class="checkbox"/>
-              <label for="lowercase">Include lowercase letters</label><br>
-              <input type="checkbox" id="chbox3" class="checkbox"/>
-              <label for="numbers">Include numbers</label><br>
-              <input type="checkbox" id="chbox4" class="checkbox"/>
-              <label for="symbols">Include symbols</label><br> 
-            </ul>
+            <div id="include">
+              <input type="checkbox" id="chbox1" class="checkbox">
+              <label for="chbox1">Include uppercase letters</label><br>
+              <input type="checkbox" id="chbox2" class="checkbox">
+              <label for="chbox2">Include lowercase letters</label><br>
+              <input type="checkbox" id="chbox3" class="checkbox">
+              <label for="chbox3">Include numbers</label><br>
+              <input type="checkbox" id="chbox4" class="checkbox">
+              <label for="chbox4">Include symbols</label><br> 
+            </div>
             <div class="main_strength" id="strength">
               <div class="strength">STRENGTH</div>
               <div class="main_level">
@@ -45,4 +46,4 @@
         </div>
       </div>
     </body>  
-</html>
+</html> 
