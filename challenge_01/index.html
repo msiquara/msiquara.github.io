@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8" name="viewport" content="width=device-width">
+      <title>Decodificador</title>      
+      <script src="decode.js"></script>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>   
+      <section id="main">
+        <div id="text_area" class="area"> 
+          <textarea id="input" cols="51" rows="10" placeholder="Mensagem"></textarea>
+          <textarea id="output" cols="51" rows="10" readonly></textarea>
+        </div>        
+        <div id="botoes" class="area">
+          <button id="criptografar" class="botao" onclick="codificar()">Criptografar</button>
+          <button id="descriptografar" class="botao" onclick="decodificar()">Descriptografar</button>
+          <button id="copiar" class="botao" onclick="copy_content()">Copiar</button>
+        </div>        
+      </section>        
+    </body>  
+</html> 

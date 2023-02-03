@@ -1,0 +1,42 @@
+#main{
+    display: flex;
+    margin: 50px 150px;
+    min-width: 80%;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#text_area {
+    margin-bottom: 15px;
+}
+
+#text_area > textarea{ 
+    border-radius: 18px;
+    padding: 8px;
+}
+
+#botoes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.botao { 
+    padding: 14px 45px;
+    border-radius: 18px;
+    border-width: 1px;
+    background-color: white;
+    color: rgb(33, 33, 172);
+    border-color: rgb(33, 33, 172);
+}
+
+.botao:hover{
+    opacity: 70%;
+    transition-duration: 400ms;
+    background-color: rgb(238, 238, 238);
+}
+
+#criptografar {
+    background-color: rgb(33, 33, 172);
+    color: white;
+}
